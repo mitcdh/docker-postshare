@@ -1,0 +1,8 @@
+{
+    "require": {
+        "tpyo/amazon-s3-php-class": "dev-master"
+    },
+    "autoload": {
+        "classmap": [ "src/" ]
+    }
+}
