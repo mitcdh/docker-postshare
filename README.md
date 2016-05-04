@@ -7,10 +7,10 @@ I wanted a way to generate [Dropshare](https://getdropsha.re) equivalent uploads
 * `AWS_ACCESS_KEY`: AWS Access Key
 * `AWS_SECRET_KEY`: AWS Secret Key
 * `AWS_BUCKET_NAME`: Bucket name to upload to
-* `AWS_ENDPOINT`: AWS Endpoint DNS name
-* `AWS_PATH_PREFIX`: Path prefix to upload to
-* `PUBLIC_URL`: Public URL/CNAME to access the files
-* `URL_SHORT_API`: URL of URL Shortening API, only tested with YOURLS
+* `AWS_ENDPOINT`: Optional AWS Endpoint DNS name
+* `AWS_PATH_PREFIX`: Optional Path prefix to upload to
+* `PUBLIC_URL`: Optional public URL/CNAME to access the files
+* `URL_SHORT_API`: Optional URL of URL Shortening API, only tested with YOURLS
 * `URL_SHORT_KEY`: Optional URL shortening API key
 
 ### Usage
@@ -24,8 +24,8 @@ docker run -d \
     -e AWS_ENDPOINT="s3.amazonaws.com" \
     -e AWS_PATH_PREFIX="s/" \
     -e PUBLIC_URL="https://my.public.url/" \
-    -e URL_SHORT_API="https://yours.something/yourls-api.php" \
-    -e URL_SHORT_KEY="some-other-other-key" \
+    -e URL_SHORT_API="https://my.url.shortener/yourls-api.php" \
+    -e URL_SHORT_KEY="another-other-key" \
     mitcdh/postshare
 ````
 
