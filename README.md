@@ -35,3 +35,13 @@ curl -X POST -F "media=@/file/location" https://api.location.com
 ```
 
 Or add to Tweetbot or any application which respects similar [Custom Media Uploads](http://tapbots.net/tweetbot/custom_media/)
+
+### Structure
+* `/www`: Web root
+
+### Exposed Ports
+* `9000`: php-fpm web server
+
+### Credits
+* [Dropshare](https://getdropsha.re) for the landing page
+* [YOURLS](https://github.com/YOURLS/YOURLS/wiki/Remote-API) for the remote API code
