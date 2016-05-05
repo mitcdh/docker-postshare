@@ -40,7 +40,7 @@ Or add to Tweetbot or any application which respects similar [Custom Media Uploa
 * `/www`: Web root
 
 ### Exposed Ports
-* `9000`: php-fpm web server
+* `80`: http web server
 
 ### Credits
 * [Dropshare](https://getdropsha.re) for the landing page

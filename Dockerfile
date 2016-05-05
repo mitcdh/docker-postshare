@@ -10,7 +10,7 @@ WORKDIR /www
 
 RUN composer install --prefer-source --no-interaction
 
-EXPOSE 9000
+EXPOSE 80
 
 CMD ["/scripts/run.sh"]
 
